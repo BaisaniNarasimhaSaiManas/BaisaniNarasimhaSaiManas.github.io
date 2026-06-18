@@ -1,0 +1,217 @@
+<svg width="800" height="1130" viewBox="0 0 800 1130" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&amp;family=Oxanium:wght@300;400;600;800&amp;display=swap');
+      .bg { fill: #060809; }
+      .grid { stroke: #1a2020; stroke-width: 0.5; }
+      .accent-line { stroke: #a8ff60; stroke-width: 1.2; fill: none; }
+      .dim-line { stroke: #4a7a28; stroke-width: 0.8; fill: none; }
+      .title { font-family: 'Oxanium', sans-serif; font-weight: 800; font-size: 26px; fill: #e8f0e0; letter-spacing: -0.5px; }
+      .subtitle { font-family: 'Share Tech Mono', monospace; font-size: 13px; fill: #a8ff60; letter-spacing: 2px; }
+      .contact-text { font-family: 'Share Tech Mono', monospace; font-size: 10px; fill: #8a9a8a; }
+      .section-title { font-family: 'Oxanium', sans-serif; font-weight: 600; font-size: 16px; fill: #a8ff60; letter-spacing: 1px; }
+      .section-num { font-family: 'Share Tech Mono', monospace; font-size: 11px; fill: #3a4a3a; }
+      .label { font-family: 'Share Tech Mono', monospace; font-weight: bold; font-size: 11px; fill: #c8d8c0; }
+      .detail { font-family: 'Share Tech Mono', monospace; font-size: 11px; fill: #8a9a8a; }
+      .value { font-family: 'Share Tech Mono', monospace; font-size: 11px; fill: #a8ff60; }
+      .bullet { fill: #4a7a28; }
+      .tag { fill: #1e3310; stroke: #4a7a28; stroke-width: 0.8; }
+      .tag-text { font-family: 'Share Tech Mono', monospace; font-size: 9px; fill: #a8ff60; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" width="800" height="1130" />
+
+  <!-- PCB style grid backlines -->
+  <g class="grid">
+    <line x1="40" y1="0" x2="40" y2="1130" />
+    <line x1="760" y1="0" x2="760" y2="1130" />
+    <line x1="0" y1="180" x2="800" y2="180" />
+    <line x1="0" y1="1100" x2="800" y2="1100" />
+  </g>
+
+  <!-- Decorative PCB Traces -->
+  <g class="dim-line">
+    <path d="M 40,90 L 120,90 L 140,110 L 220,110" />
+    <circle cx="220" cy="110" r="2.5" fill="#4a7a28" />
+    <path d="M 760,90 L 680,90 L 660,110 L 580,110" />
+    <circle cx="580" cy="110" r="2.5" fill="#4a7a28" />
+  </g>
+  <g class="accent-line">
+    <path d="M 40,50 L 80,50 L 100,70 L 150,70" />
+    <circle cx="150" cy="70" r="3" fill="#a8ff60" />
+    <path d="M 760,50 L 720,50 L 700,70 L 650,70" />
+    <circle cx="650" cy="70" r="3" fill="#a8ff60" />
+  </g>
+
+  <!-- Header -->
+  <g transform="translate(60, 45)">
+    <text class="title" x="0" y="25">BAISANI NARASIMHA SAI MANAS</text>
+    <text class="subtitle" x="0" y="48">&gt; VLSI DESIGN &amp; EMBEDDED SYSTEMS ENGINEER</text>
+    
+    <!-- Contact Info -->
+    <text class="contact-text" x="0" y="75">EMAIL: manasbaisani@gmail.com</text>
+    <text class="contact-text" x="0" y="92">GITHUB: github.com/BaisaniNarasimhaSaiManas</text>
+    <text class="contact-text" x="0" y="109">LINKEDIN: linkedin.com/in/narasimha-sai-manas-baisani-69667428b</text>
+    
+    <!-- Spec Panel mockup -->
+    <rect x="420" y="58" width="260" height="60" fill="#121619" stroke="#243030" stroke-width="1" />
+    <text class="contact-text" x="435" y="76" fill="#a8ff60">SYS_ACTIVE // REV_1.0</text>
+    <text class="contact-text" x="435" y="93">DOMAINS: VLSI · EMBEDDED · IOT</text>
+    <text class="contact-text" x="435" y="110">CGPA: 8.16 / 10</text>
+  </g>
+
+  <!-- Section 1: EDUCATION -->
+  <g transform="translate(60, 200)">
+    <text class="section-num" x="0" y="18">01 /</text>
+    <text class="section-title" x="35" y="18">EDUCATION</text>
+    <line x1="0" y1="28" x2="680" y2="28" stroke="#1a2020" stroke-width="1" />
+    
+    <!-- LPU -->
+    <g transform="translate(10, 45)">
+      <circle class="bullet" cx="0" cy="6" r="3" />
+      <text class="label" x="15" y="10">Lovely Professional University</text>
+      <text class="value" x="520" y="10">8.16 CGPA</text>
+      <text class="detail" x="15" y="26">Bachelor of Technology in Electronics and Communication Engineering</text>
+      <text class="detail" x="520" y="26">Aug 2023 - Present</text>
+    </g>
+
+    <!-- NJC -->
+    <g transform="translate(10, 95)">
+      <circle class="bullet" cx="0" cy="6" r="3" />
+      <text class="label" x="15" y="10">Narayana Junior College</text>
+      <text class="value" x="520" y="10">95.3%</text>
+      <text class="detail" x="15" y="26">Intermediate (10+2) Education</text>
+      <text class="detail" x="520" y="26">Jun 2021 - Mar 2023</text>
+    </g>
+
+    <!-- VHS -->
+    <g transform="translate(10, 145)">
+      <circle class="bullet" cx="0" cy="6" r="3" />
+      <text class="label" x="15" y="10">Viswabharati High School</text>
+      <text class="value" x="520" y="10">100%</text>
+      <text class="detail" x="15" y="26">Matriculation (10th) Education</text>
+      <text class="detail" x="520" y="26">Jul 2020 - Apr 2021</text>
+    </g>
+  </g>
+
+  <!-- Section 2: PROJECTS -->
+  <g transform="translate(60, 420)">
+    <text class="section-num" x="0" y="18">02 /</text>
+    <text class="section-title" x="35" y="18">PROJECTS</text>
+    <line x1="0" y1="28" x2="680" y2="28" stroke="#1a2020" stroke-width="1" />
+
+    <!-- Project 1 -->
+    <g transform="translate(10, 45)">
+      <text class="label" x="0" y="10">8-Bit RISC Processor Design &amp; Verification</text>
+      <text class="detail" x="0" y="27">Architected a custom 8-bit RISC processor from scratch in Verilog HDL. Built a single-cycle Harvard</text>
+      <text class="detail" x="0" y="43">architecture with a 16-bit instruction set, an 8-register file, and a high-performance ALU.</text>
+      <text class="detail" x="0" y="59">Validated full functional correctness through testbenches simulated in Xilinx Vivado.</text>
+      <rect class="tag" x="0" y="70" width="85" height="16" />
+      <text class="tag-text" x="8" y="82">VERILOG HDL</text>
+      <rect class="tag" x="90" y="70" width="95" height="16" />
+      <text class="tag-text" x="98" y="82">XILINX VIVADO</text>
+      <rect class="tag" x="190" y="70" width="85" height="16" />
+      <text class="tag-text" x="198" y="82">RTL DESIGN</text>
+    </g>
+
+    <!-- Project 2 -->
+    <g transform="translate(10, 155)">
+      <text class="label" x="0" y="10">Wireless Image TX + Huffman Compression</text>
+      <text class="detail" x="0" y="27">Designed a real-time image compression and wireless transmission system on ESP32 microcontrollers.</text>
+      <text class="detail" x="0" y="43">Developed a Huffman coding engine in C++ that reduces payload sizes by up to 60% with full integrity.</text>
+      <text class="detail" x="0" y="59">Decoded and reconstructed lossless images directly onto a receiver-side OLED display.</text>
+      <rect class="tag" x="0" y="70" width="45" height="16" />
+      <text class="tag-text" x="8" y="82">C++</text>
+      <rect class="tag" x="50" y="70" width="55" height="16" />
+      <text class="tag-text" x="58" y="82">ESP32</text>
+      <rect class="tag" x="110" y="70" width="65" height="16" />
+      <text class="tag-text" x="118" y="82">RF COMMS</text>
+      <rect class="tag" x="180" y="70" width="105" height="16" />
+      <text class="tag-text" x="188" y="82">HUFFMAN CODING</text>
+    </g>
+
+    <!-- Project 3 -->
+    <g transform="translate(10, 265)">
+      <text class="label" x="0" y="10">IoT Smart Door Access Control System</text>
+      <text class="detail" x="0" y="27">Established a secure, time-based smart door access system utilizing ESP32, RTC, and servos.</text>
+      <text class="detail" x="0" y="43">Integrated a mobile application interface for remote timing configuration, scheduling, and access.</text>
+      <rect class="tag" x="0" y="54" width="55" height="16" />
+      <text class="tag-text" x="8" y="66">ESP32</text>
+      <rect class="tag" x="60" y="54" width="75" height="16" />
+      <text class="tag-text" x="68" y="66">RTC / SERVO</text>
+      <rect class="tag" x="140" y="54" width="35" height="16" />
+      <text class="tag-text" x="148" y="66">IOT</text>
+    </g>
+  </g>
+
+  <!-- Section 3: SKILLS -->
+  <g transform="translate(60, 755)">
+    <text class="section-num" x="0" y="18">03 /</text>
+    <text class="section-title" x="35" y="18">TECHNICAL SKILLS</text>
+    <line x1="0" y1="28" x2="680" y2="28" stroke="#1a2020" stroke-width="1" />
+
+    <g transform="translate(10, 45)">
+      <text class="label" x="0" y="10" fill="#a8ff60">EMBEDDED SYSTEMS</text>
+      <text class="detail" x="0" y="26">Embedded C · STM32 · ESP32 · PIC · AVR · ARM Cortex-M · RTOS</text>
+      <text class="detail" x="0" y="40">UART · SPI · I2C · ADC · Timers</text>
+    </g>
+
+    <g transform="translate(360, 45)">
+      <text class="label" x="0" y="10" fill="#a8ff60">VLSI &amp; DIGITAL DESIGN</text>
+      <text class="detail" x="0" y="26">Verilog HDL · RTL Design · Digital Electronics</text>
+      <text class="detail" x="0" y="40">FPGA Basics · CMOS Fundamentals</text>
+    </g>
+
+    <g transform="translate(10, 115)">
+      <text class="label" x="0" y="10" fill="#a8ff60">PROGRAMMING</text>
+      <text class="detail" x="0" y="26">C · C++ · Java</text>
+    </g>
+
+    <g transform="translate(360, 115)">
+      <text class="label" x="0" y="10" fill="#a8ff60">TOOLS &amp; SOFTWARE</text>
+      <text class="detail" x="0" y="26">STM32CubeIDE · MPLAB X · Arduino IDE</text>
+      <text class="detail" x="0" y="40">MATLAB · Proteus · Git · Vivado · NC-Sim</text>
+    </g>
+  </g>
+
+  <!-- Section 4: CERTIFICATIONS & ACHIEVEMENTS -->
+  <g transform="translate(60, 955)">
+    <text class="section-num" x="0" y="18">04 /</text>
+    <text class="section-title" x="35" y="18">CERTIFICATIONS &amp; ACHIEVEMENTS</text>
+    <line x1="0" y1="28" x2="680" y2="28" stroke="#1a2020" stroke-width="1" />
+
+    <g transform="translate(10, 45)">
+      <!-- Cert 1 -->
+      <circle class="bullet" cx="0" cy="5" r="2.5" />
+      <text class="label" x="15" y="8" fill="#e8f0e0">Mastering Microcontroller &amp; Embedded Driver Dev</text>
+      <text class="detail" x="420" y="8">UDEMY / JAN 2026</text>
+
+      <!-- Cert 2 -->
+      <circle class="bullet" cx="0" cy="23" r="2.5" />
+      <text class="label" x="15" y="26" fill="#e8f0e0">Microcontroller Embedded C Programming</text>
+      <text class="detail" x="420" y="26">UDEMY / FEB 2026</text>
+
+      <!-- Cert 3 -->
+      <circle class="bullet" cx="0" cy="41" r="2.5" />
+      <text class="label" x="15" y="44" fill="#e8f0e0">Hardware Modeling using Verilog</text>
+      <text class="detail" x="420" y="44">NPTEL / JUL-SEP 2025</text>
+
+      <!-- Cert 4 -->
+      <circle class="bullet" cx="0" cy="59" r="2.5" />
+      <text class="label" x="15" y="62" fill="#e8f0e0">Microprocessors and Interfacing</text>
+      <text class="detail" x="420" y="62">NPTEL / APR 2025</text>
+
+      <!-- Cert 5 -->
+      <circle class="bullet" cx="0" cy="77" r="2.5" />
+      <text class="label" x="15" y="80" fill="#e8f0e0">Japanese Language N5 Certification</text>
+      <text class="detail" x="420" y="80">CFL LPU / JAN 2025</text>
+
+      <!-- Cert 6 -->
+      <circle class="bullet" cx="0" cy="95" r="2.5" />
+      <text class="label" x="15" y="98" fill="#e8f0e0">First Runner-up in PROJECT-O-MANIA</text>
+      <text class="detail" x="420" y="98">LPU / JAN 2024</text>
+    </g>
+  </g>
+</svg>

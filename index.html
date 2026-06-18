@@ -119,9 +119,9 @@ h1{font-family:'Oxanium',sans-serif;font-size:clamp(40px,6.5vw,76px);font-weight
 .cert-card.has-img:hover .cert-name{color:var(--phos);}
 .cert-view-btn{margin-top:8px;display:inline-flex;align-items:center;gap:6px;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--phos-dim);border:1px solid var(--phos-dk);background:var(--phos-dk);padding:3px 8px;transition:all 0.15s;}
 .cert-card.has-img:hover .cert-view-btn{color:var(--phos);border-color:var(--phos-dim);box-shadow:var(--glow-sm);}
-.lightbox{display:none;position:fixed;inset:0;z-index:2000;background:rgba(2,3,4,0.96);align-items:center;justify-content:center;padding:20px;}
+.lightbox{display:none;position:fixed;inset:0;z-index:2000;background:rgba(2,3,4,0.96);padding:20px;overflow:auto;}
 .lightbox.active{display:flex;}
-.lightbox-inner{position:relative;max-width:900px;width:100%;border:1px solid var(--border2);box-shadow:0 0 60px rgba(168,255,96,0.08);}
+.lightbox-inner{position:relative;max-width:900px;width:100%;margin:auto;border:1px solid var(--border2);box-shadow:0 0 60px rgba(168,255,96,0.08);}
 .lightbox-bar{background:var(--bg3);border-bottom:1px solid var(--border);padding:10px 16px;display:flex;align-items:center;justify-content:space-between;}
 .lightbox-title{font-family:'VT323',monospace;font-size:16px;color:var(--phos);letter-spacing:2px;}
 .lightbox-close{font-family:'VT323',monospace;font-size:20px;color:var(--text-lo);cursor:pointer;padding:0 6px;transition:color 0.15s;background:none;border:none;letter-spacing:1px;}
@@ -132,7 +132,7 @@ h1{font-family:'Oxanium',sans-serif;font-size:clamp(40px,6.5vw,76px);font-weight
 @keyframes crt-flicker{0%,98%,100%{opacity:1;}99%{opacity:0.7;}}
 .contact-sub{color:var(--text-lo);font-size:12px;letter-spacing:1px;margin-bottom:48px;}
 .contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1px;background:var(--border);border:1px solid var(--border);max-width:900px;margin:0 auto;}
-.contact-item{background:var(--panel);padding:20px 24px;display:flex;align-items:center;gap:14px;text-decoration:none;transition:background 0.15s;}
+.contact-item{background:var(--panel);padding:20px 24px;display:flex;align-items:center;justify-content:center;text-align:center;gap:14px;text-decoration:none;transition:background 0.15s;}
 .contact-item:hover{background:var(--bg3);}
 .contact-item:hover .c-label{color:var(--phos);text-shadow:var(--glow-sm);}
 .c-port{font-family:'VT323',monospace;font-size:13px;color:var(--text-lo);letter-spacing:1px;flex-shrink:0;width:36px;}
@@ -195,6 +195,7 @@ footer{position:relative;z-index:1;padding:20px 48px;border-top:1px solid var(--
     </div>
     <div class="hero-btns">
       <a href="#projects" class="btn btn-primary">VIEW PROJECTS</a>
+      <a href="javascript:void(0)" onclick="openLightbox('Manas_CV.svg','CV_VIEW','MANAS BAISANI - CV')" class="btn btn-outline">VIEW CV</a>
       <a href="#contact" class="btn btn-outline">CONTACT</a>
     </div>
   </div>
@@ -208,13 +209,55 @@ footer{position:relative;z-index:1;padding:20px 48px;border-top:1px solid var(--
 <div id="skills" class="s-wrap alt"><div class="inner">
   <div class="s-head fi"><span class="s-num">02</span><h2 class="s-title">SKILLS<span class="dot">.</span></h2></div>
   <div class="skills-block fi">
+    <!-- Embedded Systems -->
     <div class="skill-col">
-      <div class="skill-col-head"><span class="skill-col-ic">IC_01</span><span class="skill-col-title">VLSI Design</span><span class="skill-col-sub">Digital / RTL</span></div>
-      <div class="skill-tags"><span class="stag">Verilog HDL</span><span class="stag">Xilinx Vivado</span><span class="stag">Cadence NC-Sim</span><span class="stag">RTL Design</span><span class="stag">Testbench Dev.</span><span class="stag">Harvard Arch.</span><span class="stag">RISC Processor</span><span class="stag">ALU Design</span><span class="stag">FSM</span><span class="stag">Digital Logic</span><span class="stag">RTL Simulation</span></div>
+      <div class="skill-col-head"><span class="skill-col-ic">IC_01</span><span class="skill-col-title">Embedded Systems</span><span class="skill-col-sub">Firmware / RTOS</span></div>
+      <div class="skill-tags">
+        <span class="stag">Embedded C</span>
+        <span class="stag">STM32</span>
+        <span class="stag">ESP32</span>
+        <span class="stag">PIC Microcontrollers</span>
+        <span class="stag">AVR</span>
+        <span class="stag">ARM Cortex-M</span>
+        <span class="stag">RTOS</span>
+        <span class="stag">UART</span>
+        <span class="stag">SPI</span>
+        <span class="stag">I2C</span>
+        <span class="stag">ADC</span>
+        <span class="stag">Timers</span>
+      </div>
     </div>
+    <!-- VLSI & Digital Design -->
     <div class="skill-col">
-      <div class="skill-col-head"><span class="skill-col-ic">IC_02</span><span class="skill-col-title">Embedded Systems</span><span class="skill-col-sub">Firmware / IoT</span></div>
-      <div class="skill-tags"><span class="stag">Embedded C</span><span class="stag">MicroPython</span><span class="stag">C++</span><span class="stag">ESP32</span><span class="stag">ARM Cortex STM32</span><span class="stag">PIC P1F458</span><span class="stag">UART</span><span class="stag">SPI</span><span class="stag">I2C</span><span class="stag">STM32CubeIDE</span><span class="stag">Proteus</span><span class="stag">mikroC PRO</span><span class="stag">IoT Systems</span><span class="stag">Real-Time FW</span></div>
+      <div class="skill-col-head"><span class="skill-col-ic">IC_02</span><span class="skill-col-title">VLSI &amp; Digital Design</span><span class="skill-col-sub">RTL / Hardware</span></div>
+      <div class="skill-tags">
+        <span class="stag">Verilog HDL</span>
+        <span class="stag">RTL Design</span>
+        <span class="stag">Digital Electronics</span>
+        <span class="stag">FPGA Basics</span>
+        <span class="stag">CMOS Fundamentals</span>
+      </div>
+    </div>
+    <!-- Programming -->
+    <div class="skill-col">
+      <div class="skill-col-head"><span class="skill-col-ic">IC_03</span><span class="skill-col-title">Programming</span><span class="skill-col-sub">Software</span></div>
+      <div class="skill-tags">
+        <span class="stag">C</span>
+        <span class="stag">C++</span>
+        <span class="stag">Java</span>
+      </div>
+    </div>
+    <!-- Tools & Software -->
+    <div class="skill-col">
+      <div class="skill-col-head"><span class="skill-col-ic">IC_04</span><span class="skill-col-title">Tools &amp; Software</span><span class="skill-col-sub">IDE / EDA</span></div>
+      <div class="skill-tags">
+        <span class="stag">STM32CubeIDE</span>
+        <span class="stag">MPLAB X</span>
+        <span class="stag">Arduino IDE</span>
+        <span class="stag">MATLAB</span>
+        <span class="stag">Proteus</span>
+        <span class="stag">Git</span>
+      </div>
     </div>
   </div>
 </div></div>
@@ -271,10 +314,9 @@ footer{position:relative;z-index:1;padding:20px 48px;border-top:1px solid var(--
     <div class="contact-crt">ESTABLISH_CONNECTION</div>
     <div class="contact-sub">Open to internships &middot; research collaborations &middot; full-time roles in VLSI Design or Embedded Systems</div>
     <div class="contact-grid">
-      <a href="mailto:manasbaisani@gmail.com" class="contact-item"><span class="c-port">P01</span><div class="c-divider"></div><div><div class="c-label">manasbaisani@gmail.com</div><div class="c-sub">EMAIL</div></div></a>
-      <a href="https://linkedin.com/in/narasimha-sai-manas-baisani-69667428b/" target="_blank" class="contact-item"><span class="c-port">P02</span><div class="c-divider"></div><div><div class="c-label">LinkedIn Profile</div><div class="c-sub">PROFESSIONAL NETWORK</div></div></a>
-      <a href="https://github.com/BaisaniNarasimhaSaiManas" target="_blank" class="contact-item"><span class="c-port">P03</span><div class="c-divider"></div><div><div class="c-label">GitHub Repository</div><div class="c-sub">CODE / PROJECTS</div></div></a>
-      <a href="tel:+919110576501" class="contact-item"><span class="c-port">P04</span><div class="c-divider"></div><div><div class="c-label">+91 91105 76501</div><div class="c-sub">MOBILE</div></div></a>
+      <a href="mailto:manasbaisani@gmail.com" class="contact-item"><div><div class="c-label">manasbaisani@gmail.com</div><div class="c-sub">EMAIL</div></div></a>
+      <a href="https://linkedin.com/in/narasimha-sai-manas-baisani-69667428b/" target="_blank" class="contact-item"><div><div class="c-label">LinkedIn Profile</div><div class="c-sub">PROFESSIONAL NETWORK</div></div></a>
+      <a href="https://github.com/BaisaniNarasimhaSaiManas" target="_blank" class="contact-item"><div><div class="c-label">GitHub Repository</div><div class="c-sub">CODE / PROJECTS</div></div></a>
     </div>
   </div>
 </div>
